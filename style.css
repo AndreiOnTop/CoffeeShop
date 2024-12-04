@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(23, 21, 27);
+    color: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.2s ease-in;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 2.2rem;
+    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.navbar .links li {
+    list-style: none;
+}
+
+.navbar .links a {
+    position: relative;
+    transition: color 0.2s ease-in;
+}
+
+.navbar .links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease;
+}
+
+.navbar .links a:hover::after {
+    width: 100%;
+}
+
+.navbar .toggle-btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+
+}
+
+.action-btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.action-btn:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.action-btn:active {
+    scale: 0.95;
+}
+
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero a {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.hero a img.cta-image {
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hero a img.cta-image:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.hero .action-btn {
+    background-color: orange;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hero .action-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about, .services, .contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services .service-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.services h2 {
+    padding: 20px;
+}
+
+.service-item {
+    background-color: #2b2b2b;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.service-item i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: orange;
+}
+
+.service-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.contact .contact-info {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.contact-info p {
+    padding-left: 40px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.contact-info i {
+    color: orange;
+    font-size: 1.5rem;
+}
